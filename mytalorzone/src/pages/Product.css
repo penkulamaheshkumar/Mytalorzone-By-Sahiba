@@ -1,0 +1,66 @@
+/* General Layout for the Products Page */
+.product-list {
+    display: flex;
+    flex-direction: row;  /* Stack items vertically */
+    align-items: center;     /* Center align the products */
+    gap: 25px;               /* Space between the products */
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .product-list h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  /* Styling for the Product Card */
+  .product-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .product-card .price {
+    font-size: 1.25rem;
+    color: #f39c12;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-list {
+      flex-direction: column;  /* Ensure column layout on small screens */
+      padding: 0;  /* Remove padding for smaller screens */
+    }
+  
+    .product-card {
+      width: 80%;   /* Make cards take up more width on smaller screens */
+      margin-bottom: 30px;  /* Space between cards */
+    }
+  }
+  

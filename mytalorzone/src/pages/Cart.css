@@ -1,0 +1,133 @@
+/* General layout for the Cart page */
+.cart-container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  .cart-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Cart item styling */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .cart-item-details h4 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .cart-item-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .cart-item-details button {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    background-color: #b98d45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-item-details button:hover {
+    background-color: #181614;
+  }
+  
+  /* Cart summary section */
+  .cart-summary {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  
+  .cart-summary h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cart-summary button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color:#e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-summary button:hover {
+    background-color:#2e2518;
+  }
+  
+  /* Empty cart message styling */
+  .cart-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cart-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item img {
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .cart-item-details {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  
+    .cart-summary button {
+      width: 100%;
+    }
+  }
+  

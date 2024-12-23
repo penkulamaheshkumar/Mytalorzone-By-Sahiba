@@ -1,0 +1,40 @@
+/* src/components/Hero.css */
+.hero {
+    background-image: url('C:\Users\Mahesh\OneDrive\Desktop\Frontend of cloths\mytalorzone\public\hero-img.jpg'); /* Replace with your hero image path */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:aliceblue;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    max-width: 900px;
+  }
+  
+  /* .hero .cta-button {
+    background-color:red;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #333;
+    color: white;
+  } */
+  

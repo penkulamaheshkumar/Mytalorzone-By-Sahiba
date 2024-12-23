@@ -1,0 +1,50 @@
+/* General Layout for the About Page */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color:rgb(101, 76, 76);
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color:black;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    color:black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    max-width: 800px;
+  }
+  
+  /* Image Section */
+  .about-container::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-image: url('C:\Users\Mahesh\OneDrive\Desktop\Frontend of cloths\mytalorzone\public\about.jpg'); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+  }
+  
+  /* Add styles for responsiveness */
+  @media (max-width: 768px) {
+    .about-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-container p {
+      font-size: 1rem;
+    }
+  }
+  
